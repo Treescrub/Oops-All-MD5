@@ -270,16 +270,8 @@ unsigned char block[64];
   state[3] += d;
 
   /* Zeroize sensitive information.
-
-
-
-Rivest                                                         [Page 14]
-
-
-RFC 1321              MD5 Message-Digest Algorithm            April 1992
-
-
 */
+
   MD5_memset ((POINTER)x, 0, sizeof (x));
 }
 
